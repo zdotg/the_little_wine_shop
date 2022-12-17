@@ -3,7 +3,21 @@
     margin: 0 auto;
 }
 
+header img {
+    height: 100px;
+    width: 100px;
+}
+
+
 /* Header Content  */
+.info-bar {
+    margin-bottom: 2em;
+}
+
+header {
+    margin-bottom: 2em;
+}
+
 .header-message {
     line-height: 20px;
     margin: 0;
