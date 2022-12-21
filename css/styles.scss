@@ -1,5 +1,6 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+$font-stack: 'Dosis', sans-serif;
 
 $primary-color: #f7E8A4;
 $secondary-color: #0091Ad;
@@ -7,20 +8,38 @@ $tertiary-color: #CC007A;
 $default-color: #FFF;
 
 body {
-    background-color: $default-color;
     min-height: 100vh;
+    font-family: $font-stack;
 }
 
+h1,
+h2 {
+    font-family: $font-stack;
+}
+
+.logoBorderRadius {
+    border-radius: 50%;
+}
 
 .wrapper {
     max-width: 1180px;
     margin: 0 auto;
 }
 
+.navbar {
+    font-family: $font-stack;
+    background-color: $default-color;
+}
+
+
 
 /* Header Content  */
 .info-bar {
     margin-bottom: 2em;
+}
+
+.title {
+    align-content: center;
 }
 
 header {
@@ -30,6 +49,8 @@ header {
 .header-message {
     line-height: 20px;
     margin: 0;
+    font-family: 'Dosis', sans-serif;
+
 }
 
 .header-search {
@@ -108,4 +129,13 @@ select {
     background: url(//cdn.shopify.com/s/files/1/0080/4559/2661/t/6/assets/search.svg?v=6955923…);
     background-repeat: no-repeat;
     background-position: right 3px center;
+}
+
+// body section
+
+.categories-container,
+.featured-container,
+.social-container {
+    margin-bottom: 4em;
+    margin-top: 4em;
 }
