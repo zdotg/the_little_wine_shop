@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f38f31d1bf.js" crossorigin="anonymous"></script>
     <!-- CSS and Bootstrap Link -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
@@ -27,9 +28,9 @@
             <div class="col-2 header-search__wrapper">
                 <div class="header-search">
                     <div>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-primary btn-sm" type="submit">Search</button>
+                        <form class="input-group search" action="/search" method="get" search">
+                            <input class="search-bar" type="search">
+                            <button class="btn search-btn" type="submit"></button>
                         </form>
                     </div>
                 </div>
@@ -39,76 +40,87 @@
 
     <!-- Header Section COntaining Logo and Nav -->
     <header>
-        <div class="container">
-            <div class="row align-items-start">
-                <div class="col-2">
-                    <img src="img/shop.png" class="img-fluid col" alt="Wine Shop Logo">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-1">
+                    <img src="img/shop.png" class="img-fluid" alt="Wine Shop Logo">
                 </div>
-                <div class="col-4 title text-center pt-4">
-                    <h1><strong>The Little Wine Shop</strong> </h1>
-                    <h2 class="text-muted">your neighbergood wine stop</h2>
+                <div class="col-3 text-start">
+                    <h2>
+                        <i class="fa-solid fa-wine-glass-empty"></i><strong> The Little Wine Shop</strong>
+                    </h2>
+                    <h6 class="text-muted">your neighberhood wine stop</h6>
                 </div>
-                <nav class="col-6 navbar navbar-expand-lg">
-                    <div class="container-fluid mt-3">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active"><a class="nav-link" href="#">Shop All</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Latest Arrivals</a></li>
-                            <li class="nav-item"><a class="nav-link" href=" #">Categories</a></li>
-                            <li class="nav-item"></li><a class="nav-link" href="#">About Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Cart</a></li>
-                        </ul>
-                    </div>
-                </nav>
-                <img src="img/winebanner.jpeg" class="sticky-top mw-100 mh-100" alt="Lineup of Natural wine bottles">
+                <div class="container col-5">
+                    <nav class=" navbar navbar-expand-lg nav-fill">
+                        <div class="container-fluid">
+                            <ul class=" nav navbar-nav col">
+                                <li class="nav-item active"><a class="nav-link" href="#">Shop All</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Latest Arrivals</a></li>
+                                <li class="nav-item"><a class="nav-link" href=" #">Categories</a></li>
+                                <li class="nav-item"></li><a class="nav-link" href="#">About Us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Cart</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </div>
+        </div>
+        <div class="container">
+            <img src="img/winebanner.jpeg" class="img-fluid mx-auto d-block rounded"
+                alt="Lineup of Natural wine bottles">
         </div>
     </header>
 
     <!-- Featured Section -->
-    <div class="container featured-container mt-4">
+    <div class="container featured-container mt-4 mb-4">
         <h1 class="display-6 text-center">Featured Products</h1>
-        <div class="row text-center">
-            <div class="col-4">
-                <img src="img/btl.png" class="img-thumbnail" alt="...">
-                <p>Product Name</p>
-                <p>$$$</p>
+        <div class="row text-center align-content-center">
+            <div class="col">
+                <img src="img/Dang_-cutout_f5e462de-ec57-4391-9764-aaba188421f0_180x.webp" class="img-thumbnail"
+                    alt="...">
+                <p class="text-muted pt-2 mb-2">Ardure Wines X PetNat</p>
+                <p>$34.99</p>
             </div>
-            <div class="col-4">
-                <img src="img/btl.png" class="img-thumbnail" alt="...">
-                <p>Product Name</p>
-                <p>$$$</p>
+            <div class="col">
+                <img src="img/UFOPiquette-cutout_180x.webp" class="img-thumbnail" alt="...">
+                <p class="text-muted pt-2 mb-2">Grape Abduction - Piquette Rose</p>
+                <p>$24.99</p>
             </div>
-            <div class="col-4">
-                <img src="img/btl.png" class="img-thumbnail" alt="...">
-                <p>Product Name</p>
-                <p>$$$</p>
+            <div class="col">
+                <img src="img/Wavy5-cutout_180x.webp" class="img-thumbnail" alt="...">
+                <p class="text-muted pt-2 mb-2">Wavy Wine - White Wines Cooler</p>
+                <p>$31.99</p>
             </div>
-            <div class="col-4">
-                <img src="img/btl.png" class="img-thumbnail" alt="...">
-                <p>Product Name</p>
-                <p>$$$</p>
+            <div class="col">
+                <img src="img/Gabernik23-cutout_180x.webp" class="img-thumbnail" alt="...">
+                <p class="text-muted pt-2 mb-2">Gabernik 23 - Red Piquette</p>
+                <p>$21.99</p>
             </div>
-            <div class="col-4">
-                <img src="img/btl.png" class="img-thumbnail" alt="...">
-                <p>Product Name</p>
-                <p>$$$</p>
+            <div class="col">
+                <img src="img/FruitBlood-cutout_180x.webp" class="img-thumbnail" alt="...">
+                <p class="text-muted pt-2 mb-2">Fruit Blood - Love Bite</p>
+                <p>$32.99</p>
             </div>
-            <div class="col-4">
-                <img src="img/btl.png" class="img-thumbnail" alt="...">
-                <p>Product Name</p>
-                <p>$$$</p>
+            <div class="col">
+                <img src="img/Cantinapale-cutout_180x.webp" class="img-thumbnail" alt="...">
+                <p class="text-muted pt-2 mb-2">Cantina Alpina Pale Mpuntain Rose</p>
+                <p>$34.99</p>
             </div>
         </div>
 
         <!-- Miscellaneous Filler -->
-        <div class="row">
-            <div class="col">
-                <img src="" alt="">
-            </div>
-            <div class="col">
-                <img src="" alt="">
+        <div class="container">
+            <div class="row bg-light">
+                <div class="col text-center mx-auto">
+                    <img class="img-thumbnail h-75 w-75" src="img/croc-key.webp" alt="">
+                </div>
+                <div class="col text-center mx-auto">
+                    <img class="img-thumbnail h-75 w-75" src="img/croc-tote.webp" alt="">
+                </div>
             </div>
         </div>
+
 
         <!-- Categories Section -->
         <div class="container categories-container">
@@ -166,7 +178,7 @@
                 <footer class="container pt-3">
                     <div class="row">
                         <div class="col text-start">
-                            <h5>Links</h5>
+                            <h5>Nav Links</h5>
                             <a href="#">Shop All</a>
                             <a href="#">Latest Arrivals</a>
                             <a href="#">Categories</a>
@@ -186,6 +198,7 @@
                         </div>
                     </div>
                 </footer>
+
                 <!-- jQuery -> Popper.js -> Bootstrap JavaScript plugins.-->
                 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
                 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>

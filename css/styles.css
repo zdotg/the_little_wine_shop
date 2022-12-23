@@ -10774,6 +10774,10 @@ body {
   font-family: "Dosis", sans-serif;
 }
 
+.jumbotron {
+  background-color: #0091Ad;
+}
+
 h1, .h1,
 h2,
 .h2 {

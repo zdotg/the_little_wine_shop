@@ -12,6 +12,10 @@ body {
     font-family: $font-stack;
 }
 
+.jumbotron {
+    background-color: $secondary-color;
+}
+
 h1,
 h2 {
     font-family: $font-stack;
