@@ -15,65 +15,104 @@
     <title>The Little Wine Shop</title>
 </head>
 
+
+
 <body>
-    <div class="info-bar spacer">
-        <div class="row">
-            <div class="col-10 text-center wrapper">
-                <div class="bg text-uppercase header-message">
-                    <a href="#">
-                        Enjoy 10% off 12 or more bottles with promo code "get12". Promo valid in-store or online!
-                    </a>
-                </div>
-            </div>
-            <div class="col-2 header-search__wrapper">
-                <div class="header-search">
-                    <div>
-                        <form class="input-group search" action="/search" method="get" search">
-                            <input class="search-bar" type="search">
-                            <button class="btn search-btn" type="submit"></button>
-                        </form>
+    <div class=" bg-white">
+        <!-- promo headline -->
+        <div class="info-bar text-bg-info">
+            <div class="row">
+                <div class=" text-center col ">
+                    <div class="bg text-uppercase header-message h4 py-5">
+                        <a href="#" class="text-light">
+                            Enjoy 10% off 12 or more bottles with promo code "get12". Promo valid in-store or online!
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- Header Section COntaining Logo and Nav -->
-    <header>
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-1">
-                    <img src="img/shop.png" class="img-fluid" alt="Wine Shop Logo">
-                </div>
-                <div class="col-3 text-start">
-                    <h2>
-                        <i class="fa-solid fa-wine-glass-empty"></i><strong> The Little Wine Shop</strong>
-                    </h2>
-                    <h6 class="text-muted">your neighberhood wine stop</h6>
-                </div>
-                <div class="container col-5">
-                    <nav class=" navbar navbar-expand-lg nav-fill">
-                        <div class="container-fluid">
-                            <ul class=" nav navbar-nav col">
-                                <li class="nav-item active"><a class="nav-link" href="#">Shop All</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Latest Arrivals</a></li>
-                                <li class="nav-item"><a class="nav-link" href=" #">Categories</a></li>
-                                <li class="nav-item"></li><a class="nav-link" href="#">About Us</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Cart</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
+        <div class="container-fluid ">
+            <div class="marquee" style="overflow-x: none; animation: scroll-left 25s linear infinite; height: 50px;">
+                <img class="h-75 px-5" src="img/heart.png" alt="image2" />
+                <img class="h-75 px-5" src="img/happy.png" alt="image1" />
+                <img class="h-75 px-5" src="img/mobile-phone.png" alt="image3" />
+                <img class="h-75 px-5" src="img/star.png" alt="image4" />
+                <img class="h-75 px-5" src="img/rainbow.png" alt="image4" />
+                <img class="h-75 px-5" src="img/happy.png" alt="image1" />
+                <img class="h-75 px-5" src="img/sunglasses.png" alt="image4" />
+                <img class="h-75 px-5" src="img/heart.png" alt="image2" />
+                <img class="h-75 px-5" src="img/mobile-phone.png" alt="image3" />
+                <img class="h-75 px-5" src="img/star.png" alt="image4" />
+                <img class="h-75 px-5" src="img/rainbow.png" alt="image4" />
+                <img class="h-75 px-5" src="img/sunglasses.png" alt="image4" />
+                <img class="h-75 px-5" src="img/happy.png" alt="image1" />
+                <img class="h-75 px-5" src="img/heart.png" alt="image2" />
+                <img class="h-75 px-5" src="img/mobile-phone.png" alt="image3" />
+                <img class="h-75 px-5" src="img/star.png" alt="image4" />
+                <img class="h-75 px-5" src="img/rainbow.png" alt="image4" />
+                <img class="h-75 px-5" src="img/sunglasses.png" alt="image4" />
             </div>
         </div>
-        <div class="container spacer">
-            <img src="img/winebanner.jpeg" class="img-fluid mx-auto d-block rounded"
-                alt="Lineup of Natural wine bottles">
-        </div>
-    </header>
 
-    <!-- Featured Section -->
-    <div class="container featured-container mt-4 mb-4">
+        <!-- Main Nav -->
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+                    <div class="container-fluid align-content-center primary-color">
+                        <div class="row px-5">
+                            <a class="navbar-brand col" href="#"> <img src="img/shop.png"
+                                    class="object-fit-contain img-fluid ps-4" alt="Wine Shop Logo">
+                                <h2 class="fw-bold">
+                                    <i class="fa-solid fa-wine-glass-empty"></i>
+                                    <strong>The <span class="fst-italic">Little</span> Wine Shop</strong>
+                                </h2>
+                                <small class="text-muted text-center ps-5">your neighberhood wine stop</small>
+                            </a>
+                            <div class="collapse navbar-collapse col-9 justify-content-end " id="navbarNav">
+                                <ul class="navbar-nav ">
+                                    <li class="nav-item h3 pe-5">
+                                        <a class="nav-link active" aria-current="page" href="#">Shop All</a>
+                                    </li>
+                                    <li class="nav-item h3 pe-5">
+                                        <a class="nav-link" href="#">Latest Arrivals</a>
+                                    </li>
+                                    <li class="nav-item dropdown h3 pe-5">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Categories
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Red</a></li>
+                                            <li><a class="dropdown-item" href="#">White</a></li>
+                                            <li><a class="dropdown-item" href="#">Orange</a></li>
+                                            <li><a class="dropdown-item" href="#">Rose</a></li>
+                                            <li><a class="dropdown-item" href="#">Pet-Nat</a></li>
+                                            <li><a class="dropdown-item" href="#">Bubbles</a></li>
+                                            <li><a class="dropdown-item" href="#">Other</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item h3 pe-5">
+                                        <a class="nav-link" href="#">About Us</a>
+                                    </li>
+                                    <li class="nav-item h3 pe-5">
+                                        <a class="nav-link" href="#">Cart</a>
+                                    </li>
+                                </ul>
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit"><i
+                                            class="fa-solid fa-magnifying-glass"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="container-fluid  py-4">
+                <img src="img/winebanner.jpeg" class="img-fluid mx-auto d-block rounded "
+                    alt="Lineup of Natural wine bottles">
+            </div>
+        </div>
         <div class="spacer">
             <h1 class="display-6 text-center">Featured Products</h1>
             <div class="row text-center align-content-center spacer">
@@ -207,6 +246,7 @@
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </div>
 </body>
 
 </html>

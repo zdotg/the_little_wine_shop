@@ -10774,10 +10774,31 @@ body {
   font-family: "Dosis", sans-serif;
 }
 
-.jumbotron {
+.default-color {
+  background-color: #FFF;
+}
+
+.sec-color {
   background-color: #0091Ad;
 }
 
+.primary-color {
+  background-color: #f7E8A4;
+}
+
+.marquee {
+  width: 100%;
+  white-space: nowrap;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 h1, .h1,
 h2,
 .h2 {
@@ -10882,28 +10903,24 @@ select {
   outline: none;
 }
 
-.header-search .search-btn {
-  position: absolute;
-  top: 0;
-  right: 0px;
-  height: 26px;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-  width: 23px;
-  background: url(//cdn.shopify.com/s/files/1/0080/4559/2661/t/6/assets/search.svg?v=6955923…);
-  background-repeat: no-repeat;
-  background-position: right 3px center;
-}
-
 .categories-container,
 .featured-container,
 .social-container {
   margin-bottom: 4em;
   margin-top: 4em;
+  padding-top: 2em;
 }
 
 .spacer {
   margin-bottom: 5em;
+}
+
+.bg-color {
+  background-color: #f7E8A4;
+}
+
+.hedr-color {
+  background-color: #0091Ad;
 }
 
 /*# sourceMappingURL=styles.css.map */

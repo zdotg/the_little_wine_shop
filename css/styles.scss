@@ -12,14 +12,39 @@ body {
     font-family: $font-stack;
 }
 
-.jumbotron {
+.default-color {
+    background-color: $default-color;
+}
+
+.sec-color {
     background-color: $secondary-color;
+}
+
+.primary-color {
+    background-color: $primary-color;
+}
+
+.marquee {
+    width: 100%;
+    white-space: nowrap;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 h1,
 h2 {
     font-family: $font-stack;
 }
+
+
 
 .logoBorderRadius {
     border-radius: 50%;
@@ -48,6 +73,7 @@ h2 {
 
 header {
     margin-bottom: 2em;
+
 }
 
 .header-message {
@@ -122,18 +148,7 @@ select {
     outline: none;
 }
 
-.header-search .search-btn {
-    position: absolute;
-    top: 0;
-    right: 0px;
-    height: 26px;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-    width: 23px;
-    background: url(//cdn.shopify.com/s/files/1/0080/4559/2661/t/6/assets/search.svg?v=6955923…);
-    background-repeat: no-repeat;
-    background-position: right 3px center;
-}
+
 
 // body section
 
@@ -142,8 +157,17 @@ select {
 .social-container {
     margin-bottom: 4em;
     margin-top: 4em;
+    padding-top: 2em;
 }
 
 .spacer {
     margin-bottom: 5em;
+}
+
+.bg-color {
+    background-color: $primary-color;
+}
+
+.hedr-color {
+    background-color: $secondary-color;
 }
