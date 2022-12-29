@@ -10784,6 +10784,8 @@ textarea.form-control-lg {
 body {
   min-height: 100vh;
   font-family: "Dosis", sans-serif;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 h1, .h1,
@@ -10792,9 +10794,8 @@ h2,
   font-family: "Dosis", sans-serif;
 }
 
-.navbar {
-  font-family: "Dosis", sans-serif;
-  background-color: #FFF;
+.spacer {
+  margin-top: 150px;
 }
 
 .header-message {
@@ -10802,6 +10803,11 @@ h2,
   letter-spacing: 3px;
   line-height: 20px;
   font-family: "Dosis", sans-serif;
+}
+
+.navbar {
+  font-family: "Dosis", sans-serif;
+  background-color: #FFF;
 }
 
 /*# sourceMappingURL=styles.css.map */

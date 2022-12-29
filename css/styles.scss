@@ -29,6 +29,8 @@ $default-color: #FFF;
 body {
     min-height: 100vh;
     font-family: $font-stack;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 h1,
@@ -36,14 +38,9 @@ h2 {
     font-family: $font-stack;
 }
 
-
-
-.navbar {
-    font-family: $font-stack;
-    background-color: $default-color;
+.spacer {
+    margin-top: 150px;
 }
-
-
 
 // Header Content
 
@@ -53,6 +50,11 @@ h2 {
     line-height: 20px;
     font-family: $font-stack;
 
+}
+
+.navbar {
+    font-family: $font-stack;
+    background-color: $default-color;
 }
 
 // body section
