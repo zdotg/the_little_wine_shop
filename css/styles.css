@@ -10769,49 +10769,27 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
-  min-height: 100vh;
-  font-family: "Dosis", sans-serif;
-}
-
 .default-color {
   background-color: #FFF;
-}
-
-.sec-color {
-  background-color: #0091Ad;
 }
 
 .primary-color {
   background-color: #f7E8A4;
 }
 
-.marquee {
-  width: 100%;
-  white-space: nowrap;
+.sec-color {
+  background-color: #0091Ad;
 }
 
-@keyframes scroll-left {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+body {
+  min-height: 100vh;
+  font-family: "Dosis", sans-serif;
 }
+
 h1, .h1,
 h2,
 .h2 {
   font-family: "Dosis", sans-serif;
-}
-
-.logoBorderRadius {
-  border-radius: 50%;
-}
-
-.wrapper {
-  max-width: 1180px;
-  margin: 0 auto;
 }
 
 .navbar {
@@ -10819,108 +10797,11 @@ h2,
   background-color: #FFF;
 }
 
-/* Header Content  */
-.info-bar {
-  margin-bottom: 2em;
-}
-
-.title {
-  align-content: center;
-}
-
-header {
-  margin-bottom: 2em;
-}
-
 .header-message {
+  word-spacing: 3px;
+  letter-spacing: 3px;
   line-height: 20px;
-  margin: 0;
   font-family: "Dosis", sans-serif;
-}
-
-.header-search {
-  text-align: right;
-  background-color: transparent;
-}
-
-.header-search__wrapper {
-  position: absolute;
-  top: -3px;
-  right: 15px;
-}
-
-.input-group {
-  position: relative;
-  display: table;
-  border-collapse: separate;
-}
-
-.search {
-  max-width: 100%;
-  margin-bottom: 0;
-  display: block;
-}
-
-.form {
-  display: block;
-  margin-top: 0em;
-}
-
-.header-search .search-bar {
-  position: relative;
-  z-index: 100;
-  height: 26px;
-  color: #f3f3f3;
-  font-size: 16px !important;
-  padding: 0 25px 0 0;
-  text-align: right;
-  border: none;
-  margin-bottom: 0;
-  border-bottom: 1px solid transparent;
-  border-radius: 0;
-  width: 5px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-input[type=text],
-input[type=search],
-input[type=password],
-input[type=email],
-input[type=file],
-input[type=number],
-input[type=tel],
-input[type=url],
-textarea,
-select {
-  border: 1px solid #cccccc;
-  width: 100%;
-  max-width: 100%;
-  display: block;
-  margin: 0 0 1em;
-  background-color: transparent;
-  outline: none;
-}
-
-.categories-container,
-.featured-container,
-.social-container {
-  margin-bottom: 4em;
-  margin-top: 4em;
-  padding-top: 2em;
-}
-
-.spacer {
-  margin-bottom: 5em;
-}
-
-.bg-color {
-  background-color: #f7E8A4;
-}
-
-.hedr-color {
-  background-color: #0091Ad;
 }
 
 /*# sourceMappingURL=styles.css.map */
