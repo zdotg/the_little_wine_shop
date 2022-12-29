@@ -28,9 +28,14 @@ $default-color: #FFF;
 // General Styles
 body {
     min-height: 100vh;
+    max-width: 1920px;
     font-family: $font-stack;
     overflow-y: auto;
     overflow-x: hidden;
+}
+
+.flex {
+    display: flex;
 }
 
 h1,

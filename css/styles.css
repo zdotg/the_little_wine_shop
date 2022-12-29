@@ -10783,9 +10783,14 @@ textarea.form-control-lg {
 
 body {
   min-height: 100vh;
+  max-width: 1920px;
   font-family: "Dosis", sans-serif;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+.flex {
+  display: flex;
 }
 
 h1, .h1,
